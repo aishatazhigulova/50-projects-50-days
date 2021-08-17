@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: #fbabfb;
+}
+.joke-box {
+    width: 700px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 25px 50px -12px;
+    text-align: center;
+    
+}
+
+.joke__paragraph{
+    color: #bcbcbc;
+    font-size: 22px;
+}
+.joke__title {
+    color: #333;
+    font-size: 36px;
+    font-weight: 400;
+}
+.btn {
+    width: 140px;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #bd29bd;
+    padding: 16px 32px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
+    justify-self: end;
+    margin: 10px;
+}
+
+
+.btn:active {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 40px;
+ 
+}

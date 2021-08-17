@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+}
+
+.nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: bisque;
+    height: 100%;
+    width: 500px;
+    transform: translateX(-500px);
+    transition: 1s ease-in-out;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.nav.active {
+    transform: translateX(0);
+    transition: 1s ease-in-out;
+    transition-delay: 1s;
+}
+
+.line-1.active {
+    transform: translateX(0);
+    transition: 1s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+.line-2.active {
+    transform: translateX(0);
+    transition: 1s ease-in-out;
+}
+
+.nav__top {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.btn {
+    border: 0;
+    background-color: transparent;
+    font-size: 32px;
+    position: relative;
+    cursor: pointer;
+    color: #E50914;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.logo {
+    width: 300px;
+    height: auto;
+}
+.menu {
+    list-style: none;
+}
+.menu__item {
+    margin-top: 20px;
+}
+.menu__link {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.content {
+    text-align: center;
+}
+
+
+.open-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+
+.content h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
+    color: #333;
+}
+
+.line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transition: 1s ease-in-out;
+}
+.line-1 {
+    width: 520px;
+    background-color: #E50914;
+    z-index: -20;
+    transform: translateX(-520px);
+    transition-delay: 0.5s;
+}
+.line-2 {
+    width: 540px;
+    background-color: #333;
+    z-index: -30;
+    transform: translateX(-540px);
+    transition-delay: 1s;
+}

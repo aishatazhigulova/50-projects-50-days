@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: #A1ADE5;
+}
+
+.rate-card,
+.letter-card {
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    padding: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+.rate-card {
+    transform: scale(1);
+}
+
+.rate-card.hide {
+    transform: scale(0);
+    animation: hide 0.5s ease-out;
+}
+
+@keyframes hide {
+    0% {
+        transform: scale(1);  
+    }
+
+    100% {
+        transform: scale(0);  
+    }
+}
+
+
+.rate-card h3 {
+    font-size: 24px;
+    margin: 0;
+}
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0;
+}
+
+.rating__item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.rating__item.active {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.rating__item i {
+    font-size: 42px;
+    color:  #FFB500;
+}
+.rating__item span {
+    margin-top: 10px;
+}
+.rating__btn {
+    border: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rating__btn:active {
+    transform: translateY(2px);
+}
+
+.letter-card {
+    transform: scale(0);
+    position: absolute;
+
+    transform: scale(0);
+}
+
+
+.letter-card.show {
+    transform: scale(1);
+    animation: show 0.5s ease-out;
+}
+
+@keyframes show {
+    0% {
+        transform: scale(0);  
+    }
+
+    50% {
+        transform: scale(1.1);  
+    }
+
+    100% {
+        transform: scale(1);  
+    }
+}
+
+.letter-card i {
+    font-size: 42px;
+    color: #E41518;
+}
+
+.letter-card h3 {
+    margin: 0;
+    margin-top: 40px;
+}
+.rating {
+    color: #E41518;
+}

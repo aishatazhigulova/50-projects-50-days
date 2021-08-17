@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background: rgb(124,219,215);
+    background: linear-gradient(180deg, rgba(124,219,215,1) 50%, rgba(0,212,255,1) 50%, rgba(8,98,116,1) 50%); 
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    height: 70px;
+    transition: all 1s ease;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: inherit;
+    /* transition: all 1s ease; */
+}
+
+
+
+.navigation__link {
+    text-decoration: none;
+    color: #333;
+}
+
+.navigation__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    font-size: 24px;
+    color: #086274;
+    cursor: pointer;
+}
+
+.navigation__btn .fas.fa-bars {
+    display: none;
+}
+
+.active .fas.fa-bars {
+    display: block;
+}
+
+.active .fas.fa-times {
+    display: none;
+}
+
+.active.navigation .navigation__link {
+    display: none;
+}
+
+.active.navigation {
+    width: 70px;
+}
